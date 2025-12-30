@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --gray-100: #f0f6fc;
+    --gray-200: #c9d1d9;
+    --gray-400: #8b949e;
+    --gray-500: #f0f6fc1a;
+    --gray-600: #383d42;
+
+    --black-400: #3c4044;
+    --black-500: #21262d;
+    --black-600: #161b22;
+    --black-700: #0d1117;
+    --black-800: #010409;
+
+    --blue-link: #3a87ecd3;
+
+    --white: #fff;
+
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black-700);
+}
+
+#header-content {
+    width: 100%;
+    height: auto;
+    background-color: var(--black-800);
+    border-bottom: 1px solid var(--gray-600);
+}
+
+#nav-content {
+    width: 100%;
+    list-style-type: none;
+}
+
+#content-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: clamp(20px, 1.5vw, 28px);
+}
+
+#content-list a {
+    text-decoration: none;
+}
+
+.list-item-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.list-item-header img {
+    width: 28px;
+    height: auto;
+}
+
+.list-item-header img:last-child {
+    width: 40px;
+    height: auto;
+}
+
+.list-item-header h1 {
+    font-weight: 500;
+    color: var(--white);
+    font-size: clamp(14px, 2.1vw, 20px);
+}
+
+#main-container {
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+    padding: clamp(20px, 2vw, 28px);
+}
+
+#form-search-user {
+    display: flex;
+    align-items: center;
+    width: 260px;
+    margin: 0 auto;
+    padding: 8px;
+    gap: 12px;
+    background-color: var(--black-500);
+    border-radius: 16px;
+    border: 1px solid var(--gray-600);
+}
+
+#input-search-user {
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    color: var(--white);
+    font-family: "Poppins", sans-serif;
+}
+
+#input-search-user::placeholder {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: var(--gray-400);
+}
+
+#row-barrer {
+    border: 1px solid var(--gray-400);
+    height: 30px;
+}
+
+#btn-send {
+    padding: 4px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    transition: .3s ease;
+}
+
+#btn-send:hover {
+    background-color: var(--gray-600);
+    border-radius: 6px;
+}
+
+#icon-send {
+    color: var(--gray-400);
+    cursor: pointer;
+}
+
+
+#section-user-repo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+#section-user {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#section-user img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    border: 1px solid var(--gray-600);
+}
+
+#user-name {
+    font-weight: 600;
+    color: var(--white);
+    font-size: clamp(20px, 2.8vw, 32px);
+}
+
+#user-login {
+    font-weight: 400;
+    color: var(--gray-400);
+    font-size: clamp(12px, 2vw, 20px);
+}
+
+#container-company-location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#user-bio,
+#user-company,
+#user-location {
+    font-weight: 400;
+    color: var(--white);
+    font-size: clamp(8px, 1.11vw, 16px);
+}
+
+.fa-building,
+.fa-globe {
+    color: var(--white);
+    font-size: clamp(8px, 1.5vw, 14px);
+}
+
+#container-follow {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+
+#user-followers-container {
+    font-weight: 500;
+    font-size: clamp(8px, 1.7vw, 16px);
+    color: var(--gray-400);
+}
+
+#container-follow span {
+    font-weight: 500;
+    font-size: clamp(8px, 1.7vw, 16px);
+    color: var(--white);
+}
+
+#user-following-container {
+    font-weight: 500;
+    font-size: clamp(8px, 1.7vw, 16px);
+    color: var(--gray-400);
+}
+
+#section-repo {
+    width: 100%;
+}
+
+#list-repo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    list-style-type: none;
+}
+
+.list-item-repo {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    height: auto;
+    background-color: var(--black-800);
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid var(--gray-600);
+}
+
+.fa-map-pin,
+.user-name-repo {
+    color: var(--blue-link);
+    font-weight: 400;
+    font-size: clamp(8px, 1.5vw, 14px);
+}
+
+.container-top-repo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-view {
+    font-weight: 600;
+    font-size: clamp(8px, 1.2vw, 10px);
+    color: var(--gray-400);
+    padding: 2px 6px;
+    border: 1px solid var(--gray-600);
+    border-radius: 20px;
+}
+
+.user-desc-repo {
+    width: 340px;
+    color: var(--white);
+    font-weight: 300;
+    font-size: clamp(8px, 1.5vw, 12px);
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.created-data-repo p {
+    color: var(--white);
+    font-weight: 500;
+    font-size: clamp(8px, 1.5vw, 12px);
+}
